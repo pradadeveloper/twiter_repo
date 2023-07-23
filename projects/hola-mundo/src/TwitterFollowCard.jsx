@@ -1,4 +1,4 @@
-export function TwitterFollowCard({userName,name,isFollowing}){
+export function TwitterFollowCard({children,userName,name,isFollowing}){
 
     const imageTw = ('./public/jfprada.jpeg')
     console.log(isFollowing);
@@ -10,7 +10,7 @@ export function TwitterFollowCard({userName,name,isFollowing}){
                 alt="El avatar de jfprada" 
                 src={imageTw}></img>
             <div className='tw-followCard-info'>
-                <strong>{name}</strong>
+                <strong>{children}</strong>
                 <span 
                 className='tw-followCard-infoUserName'>
                     @{userName}
